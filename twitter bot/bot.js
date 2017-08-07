@@ -12,6 +12,14 @@ var T = new twit(config);
 
 //streaming api
 
+// var projectId= 'translate-176116';
+// var translateClient = Translate({
+//   projectId= projectId
+// });
+
+
+
+
 console.log('The bot is running...');
 // var stream= T.stream('statuses/filter', { follow: '312427406' })// our query
 // console.log("still runnging");
@@ -49,14 +57,17 @@ function followed(tweet) {
     screenName=tweet.user.screen_name;
    // screenName = event.source.user.screen_name;
   // function that replies back to the user who followed
-  tweetNow('@'  +screenName+ ' Thank you for the follow.');
+  tweetNow();
 }
 
 // function definition to tweet back to user who followed
-function tweetNow(tweetTxt) {  
-  var tweet = {
-      status: tweetTxt
+function tweetNow(TweetTxt) {  
+ 
+    var tweet = {
+      status: "thanks for that"
   }
+  //
+
   T.post('statuses/update', tweet, function(err, data, response) {
     if(err){
      // console.log("Error in Replying");

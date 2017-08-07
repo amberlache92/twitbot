@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/translate": "^1.0.0",
+    "google-translate": "^2.0.5",
     "twit": "^2.2.9"
   }
 }
