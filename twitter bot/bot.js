@@ -25,10 +25,10 @@ function followed(tweet) {
     name = tweet.user.name,
     screenName=tweet.user.screen_name,
     tweetText= tweet.text;
-    if(screenName == 'ATwitbot12'){
+    if(screenName == 'FrenchTwitBot'){
            return;
     }
-    var regexEx=/@\s*ATwitbot12/; //remove @Atwitbot12 that preceeds the tweet reply
+    var regexEx=/@\s*FrenchTwitBot/; //remove @Atwitbot12 that preceeds the tweet reply
     var newText=tweet.text.replace(regexEx, "\n");
        
     //translate tweet to french
